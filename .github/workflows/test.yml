@@ -1,4 +1,4 @@
-on: [pull_request_review, pull_request_review_comment]
+on: [pull_request_review, pull_request_review_comment, issues]
 
 jobs:
   echo-chamber:
