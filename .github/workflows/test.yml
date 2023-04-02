@@ -1,0 +1,10 @@
+on: [pull_request_review, pull_request_review_comment]
+
+jobs:
+  echo-chamber:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
