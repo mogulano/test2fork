@@ -16,4 +16,4 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
-    - run: echo '${{ github.event.pages.*.title }}'
+    - run: echo '${{ toJSON(github.event.pages.*.title) }}'
