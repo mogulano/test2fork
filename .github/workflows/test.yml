@@ -4,6 +4,9 @@ on:
   - issues
   - pull_request_target
   - issue_comment
+  - gollum
+  - discussion
+  - discussion_comment
 
 jobs:
   echo-chamber:
