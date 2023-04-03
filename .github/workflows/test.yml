@@ -18,4 +18,5 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
     - run: echo '${{ github.event.pages[0].title }}'
     - run: echo "${{ github.event.pages[0].title }}"
+    - run: echo "${{ format({0}, github.event.pages[0].title) }}"
     - run: echo '${{ toJSON(github.event.pages.*.title) }}'
